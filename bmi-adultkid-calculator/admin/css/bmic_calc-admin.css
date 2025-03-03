@@ -1,0 +1,502 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+
+
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    display: block;
+    box-sizing: border-box;
+}
+
+
+
+.BMIC_info_admin{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    color: grey;
+    line-height: 24px;
+}
+
+
+
+.delete_lang_custom{
+    color:red;
+    margin-left:10px;
+    cursor:pointer
+}
+
+
+
+
+.calc_container{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 0.375rem;
+    color: #333;
+    box-shadow: 0 0 8px rgb(0 0 0 / 15%);
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #ffffffcc;
+}
+.radio-label{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.custom-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.calc_choose_lang_title{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    color: black;
+    margin: 15px;
+}
+
+#new_lang_container .alert-mess{
+    color:  rgb(239 68 68);
+    width: 100%;
+    display: none;
+    margin-bottom: 10px;
+}
+
+
+#new_lang_container .calc_input_custom.alert{
+    border: 1px solid rgb(239 68 68);
+    outline: none;
+    box-shadow: none;
+}
+#new_lang_container .calc_input_custom{
+    border-radius: 4px;
+    border: 1px solid #dadada;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    width: 100%;
+
+    font-weight: 500;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 45px;
+    margin-top: 10px;
+
+}
+
+.calc_input_button:hover{
+    background: #4f94d4b8;
+}
+.calc_input_button{
+    margin-top: 10px;
+    background: #4f94d4;
+    color: white;
+    border-radius: 4px;
+    height: 56px;
+    box-shadow: 0 4px 12px transparent;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    transition-property: box-shadow;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: all 1s ease-out;
+}
+
+
+
+
+
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+* 
+.custom_flex_calc_wrapper{
+    display: flex;
+}
+#calc_wrapper *{
+    font-size: 18px;
+    line-height: 1;
+    font-family: 'DM Sans', sans-serif;
+
+}
+#calc_wrapper div{
+    box-sizing: border-box;
+}
+#calc_wrapper input::-webkit-input-placeholder { color: black; }
+.calc_wrapper{
+    border-radius: 10px;
+    color: #333;
+    box-shadow: 0 0 8px rgb(0 0 0 / 15%);
+    max-width: 920px;
+    margin-bottom: 0.75rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    --tw-border-opacity: 1;
+    border-color: rgb(156 163 175);
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255);
+    overflow: hidden;
+    
+}
+#calc_wrapper .calc_wrapper div{
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+
+
+#calc_wrapper .calc_header{
+    padding: 6px 32px;
+    display: flex;
+    justify-content: space-between;
+    background: #394f5c;
+}
+#calc_wrapper .calc_header img{
+    width: 105px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+#calc_wrapper .calc_header_title{
+    font-size: 38px;
+    line-height: 46px;
+    color: white;
+    margin-top: 19px;
+    font-weight: 600;
+}
+#calc_wrapper .calc_header_desc{
+    font-size: 17px;
+    line-height: 17px;
+    color: white;
+    margin-top: 12px;
+    letter-spacing: 0.3px;
+}
+#calc_wrapper .calc_data{
+    background: #f6f5f3;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+    width: 40%;
+}
+#calc_wrapper .calc_data span{
+    font-size: 20px;
+    line-height: 1;
+    color: #394f5c;
+    font-weight: 700;
+    letter-spacing: -0.8px;
+}
+
+#calc_wrapper .calc_input_custom{
+    border-radius: 4px;
+    border: 1px solid #dadada;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    width: 100%;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--tw-bg-opacity));
+    font-weight: 500;
+    color: var(--color-n-700);
+    position: relative;
+    padding-left: 15px;
+    padding-right: 45px;
+    margin-top: 10px;
+}
+#calc_wrapper .calc_placeholder{
+    position: absolute;
+    bottom: 16px;
+    right: 19px;
+    color: rgb(170,170,170);
+    font-size: 17px;
+}
+#calc_wrapper .calc_data_weight,.calc_data_height,.calc_data_age,.calc_data_sex{
+    position: relative;
+    margin-bottom: 15px;
+    width: 100%;
+}
+#calc_wrapper .calc_input_button:hover{
+    background: #4f94d4b8;
+}
+#calc_wrapper .calc_input_button{
+    margin-top: 18px;
+    background: #4f94d4;
+    color: white;
+    border-radius: 4px;
+    height: 56px;
+    box-shadow: 0 4px 12px transparent;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    transition-property: box-shadow;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+
+#calc_wrapper .calc_info{
+    width: 60%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 55px 58px;
+}
+#calc_wrapper .calc_info_placeholder{
+    
+    text-align: center;
+    color: black;
+    font-size: 17px;
+    line-height: 24px;
+    padding: 40px;
+    font-weight: 500;
+    
+}
+#calc_wrapper .alert-mess{
+    color:  rgb(239 68 68);
+    width: 100%;
+    opacity: 0;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+#calc_wrapper .calc_input_custom.alert{
+    border: 1px solid rgb(239 68 68);
+    outline: none;
+    box-shadow: none;
+}
+
+#calc_wrapper input::-webkit-outer-spin-button,
+#calc_wrapper input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+#calc_wrapper .calc_info_data{
+    width: 100%;
+}
+#calc_wrapper .calc_info_data_title{
+    color: black;
+    font-size: 19px;
+    line-height: 2;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+#calc_wrapper .calc_info_data_value{
+    font-size: 35px;
+    color: #394f5c;
+    margin-bottom: 10px;
+    font-weight: 700; 
+}
+#calc_wrapper .calc_info_line{
+    display: flex;
+    position: relative;
+    margin-top: 76px;
+}
+#calc_wrapper .calc_info_line_underweight{
+    border-top: 4px solid #3d794d;
+    padding-top: 19px;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    margin: 1px;
+    width: 100%;
+}
+#calc_wrapper .calc_info_line_healthy{
+    border-top: 4px solid #68c090;
+    padding-top: 19px;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    margin: 1px;
+    width: 100%;
+}
+#calc_wrapper .calc_info_line_overweight{
+    border-top: 4px solid #dd9615;
+    padding-top: 19px;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    margin: 1px;
+    width: 100%;
+}
+#calc_wrapper .calc_info_line_obese{
+    border-top: 4px solid #dd5252;
+    padding-top: 19px;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    margin: 1px;
+    width: 100%;
+}
+#calc_wrapper .calc_info_line_result_wrapper{
+    position: absolute;
+    font-size: 16px;
+    top: -45.5px;
+    left: -24px;
+    background: #394f5c;
+    color: white;
+    border-radius: 4px;
+}
+#calc_wrapper .calc_info_line_result{
+    position: relative;
+    padding: 5px 17px;
+}
+#calc_wrapper .calc_info_line_result:after{
+    border: 8px solid transparent; border-top: 8px solid #394f5c;
+    position: absolute;
+    content: '';
+    bottom: -16px;
+    left:  calc(50% - 8px);
+}
+#calc_wrapper .calc_info_line_result:before{
+    position: absolute;
+    content: '';
+    bottom: -30px;
+    left: calc(50% - 10px);
+    width: 20px;
+    height: 20px;
+    background: #394f5c;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: rgb(0 0 0 / 12%) 0px 2px 2px;
+}
+
+#calc_wrapper .calc_info_conclusion{
+    margin-top: 70px;
+    color: black;
+    font-size: 19px;
+    line-height: 38px;
+    font-weight: 600;
+    letter-spacing: 0.35px;
+}
+
+
+
+#calc_input_button img{
+    margin-left: 8px;
+}
+
+
+@media only screen and (max-width: 1240px){
+    .custom_flex_calc_wrapper{
+        flex-direction: column;
+    }
+    .calc_data,.calc_info{
+        width: 100%!important;
+    }
+    #calc_wrapper .calc_info_line_underweight{
+        font-size:3.5vw
+    }
+    #calc_wrapper .calc_info_line_healthy{
+        font-size:3.5vw
+    }
+    #calc_wrapper .calc_info_line_overweight{
+        font-size:3.5vw
+    }
+    #calc_wrapper .calc_info_line_obese{
+        font-size: 3.5vw
+    }
+    #calc_wrapper .calc_header img{
+        display: none;
+    }
+    #calc_wrapper .calc_header_desc{
+        margin-bottom: 14px;
+    }
+}
+@media only screen and (max-width: 450px){
+    #calc_wrapper .calc_info_line_underweight{
+        font-size:2.5vw
+    }
+    #calc_wrapper .calc_info_line_healthy{
+        font-size:2.5vw
+    }
+    #calc_wrapper .calc_info_line_overweight{
+        font-size:2.5vw
+    }
+    #calc_wrapper .calc_info_line_obese{
+        font-size: 2.5vw
+    }
+}
+
+
+
+.custom_flex_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.calc_placeholder.year{
+    right:  calc(55% + 19px)!important;
+}
+.calc_data_sex input[type=radio]{
+    margin: unset!important;
+}
+.calc_data_sex .custom_flex_wrapper{
+    margin-top: 15px;
+    justify-content: flex-start;
+}
+.calc_data_sex .custom_flex_wrapper label{
+    color: black!important;
+    font-weight: 500!important;
+    margin-left: 5px;
+    margin-right: 15px;
+}
+
+
+
+
+.img_calc_kid_wrapper{
+    width:fit-content;
+    height:fit-content;
+    position: relative;
+    width:100%;
+}
+.img_calc_kid_wrapper img{
+    max-width: 100%;
+    display: none;
+}
+.kid_bmi_identifier{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background:  red;
+    border:  2px solid white;
+    box-shadow: rgb(0 0 0 / 12%) 0px 2px 2px;
+}
+
+
